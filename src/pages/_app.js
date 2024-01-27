@@ -1,26 +1,18 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import '@/styles/fonts.css';
 import "@/styles/globals.css";
 import '@/styles/responsive.css';
-// import { useEffect } from "react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function App({ Component, pageProps }) {
 
-  // useEffect(() => {
-  //   const loadLocomotiveScroll = async () => {
-  //     const LocomotiveScroll = (await import('locomotive-scroll')).default;
-  //     const locomoScroll = new LocomotiveScroll({
-  //       el: document.querySelector('[data-scroll-container]'),
-  //       smooth: true,
-  //     });
-  //   };
-
-  //   loadLocomotiveScroll();
-  // }, []);
-
   return (
     <>
-      <main>
+      <main className="main_wrap">
+        <Header />
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   )
