@@ -1,0 +1,509 @@
+
+@media (max-width: 767px) {
+
+	h1 { font-size: 32px; }
+	h2 { font-size: 30px; }
+	h3 { font-size: 24px; }
+	h4 { font-size: 22px; }
+	h5 { font-size: 32px; }
+	p{ font-size: 16px; }
+
+
+	.main_header { min-height: 60px; }
+	.main_header .header_wrap { margin: 0 30px; }
+    .main_header .ferien-header-block { min-height: 60px; }
+	.main_header .header_wrap .ferien-header-block .menu-btn { display: flex; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li + li { margin: 0; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav { position: fixed; background:#ffffff; left: 0; top: 0; bottom: 0; overflow-y: auto; width: 100%; z-index: 5; padding: 50px 40px 0; transform: translateX(-100%); transition: all ease-in-out 0.3s; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav.slide { transform: translateX(0); }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul { flex-direction: column;}
+    .main_header .header_wrap .ferien-header-block .ferien-header-nav ul li { margin: 0 0; width: 100%; display: flex; }
+    .main_header .header_wrap .ferien-header-block .ferien-header-nav ul li a { margin: 10px 0; font-size: 20px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li a:hover::after { display: none; }
+
+	.banner_wrapper .bnr_wrap { margin: 0; }
+	.banner_wrapper .bnr_wrap .imgbox { height: 600px; margin: 0; }
+	.banner_wrapper .bnr_wrap .imgbox::after { top: -360px; }
+	.banner_wrapper .bnr_wrap .imgbox::before { display: none; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo { max-width: 150px; top: 6px; left: 5px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo::after { top: -100%; left: -80%; width: 500px; height: 500px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center { bottom: -26px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li { margin: 0 10px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a { height: 50px; width: 50px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a img { height: 25px; width: 25px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_btn { right: auto; bottom: 50px; width: 100%; display: flex; justify-content: center; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_btn a { font-size: 18px; padding: 14px 14px 10px 14px; }
+
+	.holiday { margin: 60px 0 0 0; }
+	.holiday_section { padding: 0 0 60px 0; }
+	.holiday_section h1 { font-size: 26px; }
+	.holiday_section h2 { padding: 0 0 20px 0; }
+	.holiday_section p { font-size: 16px; }
+
+	.dream { margin: 0 0 60px 0; flex-direction: column; }
+	.dream .dream_imgbox::after { display: none; }
+	.dream .dream_detailbox { margin: 0; }
+	.dream .dream_detailbox::after { display: none; }
+	.dream .dream_detailbox .dream_text { padding: 30px; }
+	.dream .dream_detailbox .dream_text h3 { padding: 0 0 8px 0; font-size: 22px; }
+	.dream .dream_detailbox .dream_text h4 { padding: 0 0 8px 0; }
+	.dream .dream_detailbox .dream_text p { font-size: 16px; padding: 0 0 16px 0; }
+	.dream .dream_detailbox .dream_text .dream_btn a { font-size: 18px; padding: 10px 20px; }
+
+	.teaser { margin: 0 0 30px 0; }
+	.teaser .row { row-gap: 20px; }
+	.teaser_section:hover { transform: translate(0, 0); }
+	.teaser_section .teaser_caption { bottom: 120px; }
+	.teaser_section .teasure_btn { opacity: 1; visibility: visible; }
+	.teaser_section .teasure_btn a { font-size: 16px; padding: 8px 15px; }
+	.teaser_section .teasure_btn a:hover  { background: transparent; }
+
+	.host .host_text { top: 20px; right: 4px; height: 120px; width: 120px; }
+	.host .host_text h3 { font-size: 12px; }
+	.host .host_text::after { display: none; }
+	
+	.footer_main { padding: 46px 0 0px 0; margin: 0; }
+	.ftrblock_wrap .fourthblock .followbox { margin: 0 0 10px 0; }
+	.ftrblock_wrap .firstblock { margin: 0 0 20px 0; max-width: 180px }
+	.ftrblock_wrap .secondblock { margin: 0 35px 20px 0; }
+	.ftrblock_wrap .secondblock .addressblock { padding: 0 0 14px 0; }
+	.ftrblock_wrap .secondblock .loc-btn { margin: 0 0 14px 0; }
+	.ftrblock_wrap .thirdblock { margin: 0 0 20px 0; }
+	.ftrblock_wrap .thirdblock p { font-size: 18px; }
+	.ftrblock_wrap .thirdblock p a { font-size: 18px; margin: 0 0 0 8px; }
+	.ftrblock_wrap .fourthblock { text-align: start; margin: 0; }
+	.ftrblock_wrap .fourthblock .followbox p { font-size: 18px; }
+	.ftrblock_wrap .fourthblock .social { justify-content: flex-start; margin: 0 0 10px 0; }
+	.ftrblock_wrap .fourthblock .tagbox { max-width: 280px; margin: 0 0 20px 0; }
+	.ftrblock_wrap .fourthblock .tagbox p { justify-content: flex-start; }
+	.ftrblock_wrap .fourthblock .tagbox p a:nth-child(3) { margin: 0; }
+	.footer_main .webite_by_block { justify-content: center; margin: 0; }
+	.sub_footer .footer_section { padding: 25px 0; }
+	.sub_footer .footer_section .footer_img { min-width: 120px; }
+	.sub_footer .footer_section .footer_img:nth-child(3) { margin: 0 0 0 0 !important; }
+	.sub_footer .footer_section .footer_img + .footer_img { margin: 0 0 0 20px; }
+
+
+	.headline { margin: 60px 0 0 0; }
+
+	.farm { margin: 0 10px 60px 10px; flex-direction: column; }
+	.farm .farm_imgbox::after { display: none; }
+	.farm .farm_detailbox { margin: 0; }
+	.farm .farm_detailbox::after { display: none; }
+	.farm .farm_detailbox .farm_text { padding: 30px; }
+	.farm .farm_detailbox .farm_text h3 { padding: 0 0 8px 0; }
+	.farm .farm_detailbox .farm_text h4 { padding: 0 0 6px 0; }
+	.farm .farm_detailbox .farm_text p { font-size: 16px; }
+
+	.yard { margin: 0 10px 60px 10px; flex-direction: column; }
+	.yard .farm_detailbox::after { display: none; }
+	.yard .farm_detailbox .farm_text { padding: 30px; }
+	.yard .farm_detailbox .farm_text h3 { padding: 0 0 8px 0; }
+	.yard .farm_detailbox .farm_text h4 { padding: 0 0 6px 0; }
+	.yard .farm_detailbox .farm_text p { font-size: 16px; }
+	.yard .farm_imgbox { margin: 0; }
+	.yard .farm_imgbox::after { display: none; }
+
+	.days { margin: 0 0 40px 0; }
+	.days_section .row { row-gap: 30px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	h1 { font-size: 34px; }
+	h2 { font-size: 32px; }
+	h3 { font-size: 26px; }
+	h4 { font-size: 24px; }
+	h5 { font-size: 34px; }
+	p{ font-size: 16px; }
+
+
+	.main_header { min-height: 60px; }
+	.main_header .header_wrap { margin: 0 30px; }
+    .main_header .ferien-header-block { min-height: 60px; }
+	.main_header .header_wrap .ferien-header-block .menu-btn { display: flex; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li + li { margin: 0; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav { position: fixed; background:#ffffff; left: 0; top: 0; bottom: 0; overflow-y: auto; width: 100%; z-index: 5; padding: 50px 40px 0; transform: translateX(-100%); transition: all ease-in-out 0.3s; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav.slide { transform: translateX(0); }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul { flex-direction: column; }
+    .main_header .header_wrap .ferien-header-block .ferien-header-nav ul li { margin: 0 0; width: 100%; display: flex; }
+    .main_header .header_wrap .ferien-header-block .ferien-header-nav ul li a { margin: 10px 0; font-size: 22px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li a:hover::after { display: none; }
+
+	.banner_wrapper .bnr_wrap { margin: 0; }
+	.banner_wrapper .bnr_wrap .imgbox { height: 800px; margin: 0; }
+	.banner_wrapper .bnr_wrap .imgbox::after { top: -360px; }
+	.banner_wrapper .bnr_wrap .imgbox::before { display: none; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo { max-width: 160px; top: 0; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo::after { top: -100%; left: -80%; width: 500px; height: 500px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center { bottom: -26px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li { margin: 0 10px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a { height: 50px; width: 50px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a img { height: 25px; width: 25px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_btn { right: auto; width: 100%; display: flex; justify-content: center; bottom: 50px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_btn a { font-size: 18px; padding: 14px 14px 10px 14px; }
+
+	.holiday { margin: 70px 0 0 0; }
+	.holiday_section { padding: 0 0 70px 0; }
+	.holiday_section h2 { padding: 0 0 20px 0; }
+	.holiday_section p { font-size: 18px; }
+
+	.dream { margin: 0 0 70px 0; flex-direction: column; }
+	.dream .dream_imgbox { width: 100%; }
+	.dream .dream_imgbox::after { left: -150px; top: -114px; }
+	.dream .dream_detailbox { margin: 0; }
+	.dream .dream_detailbox .dream_text { padding: 40px; }
+	.dream .dream_detailbox .dream_text h3 { padding: 0 0 18px 0; }
+	.dream .dream_detailbox .dream_text h4 { padding: 0 0 16px 0; }
+	.dream .dream_detailbox .dream_text p { font-size: 16px; padding: 0 0 16px 0; }
+	.dream .dream_detailbox .dream_text .dream_btn a { font-size: 18px; padding: 10px 20px; }
+
+	.teaser { margin: 0 0 40px 0; }
+	.teaser .row { row-gap: 30px; justify-content: center; }
+	.teaser_section:hover { transform: translate(0, 0); }
+	.teaser_section .teaser_caption { bottom: 120px; }
+	.teaser_section .teasure_btn { opacity: 1; visibility: visible; }
+	.teaser_section .teasure_btn a { font-size: 20px; padding: 8px 15px; }
+	.teaser_section .teasure_btn a:hover  { background: transparent; }
+
+	.host .host_text { top: 40px; right: 64px; height: 160px; width: 160px; }
+	.host .host_text h3 { font-size: 16px; }
+	.host .host_text::after { top: 4px; left: 6px; }
+
+	.footer_main { margin: 80px 0 0 0; }
+	.ftrblock_wrap .firstblock { margin: 0 160px 20px 0; max-width: 250px; }
+	.ftrblock_wrap .secondblock { margin: 0 0px 20px 0; }
+	.ftrblock_wrap .secondblock .addressblock { padding: 0 0 16px 0; }
+	.ftrblock_wrap .secondblock .loc-btn { margin: 0 0 16px 0; }
+	.ftrblock_wrap .secondblock .loc-btn a { padding: 4px; }
+	.ftrblock_wrap .thirdblock { margin: 0 0 20px 0; }
+	.ftrblock_wrap .thirdblock p { font-size: 20px; }
+	.ftrblock_wrap .thirdblock p a { font-size: 20px; }
+	.ftrblock_wrap .fourthblock { text-align: start; }
+	.ftrblock_wrap .fourthblock .followbox p { font-size: 20px; }
+	.ftrblock_wrap .fourthblock .social { justify-content: flex-start; }
+	.ftrblock_wrap .fourthblock .tagbox { max-width: 280px; margin: 0 0 20px 0; }
+	.ftrblock_wrap .fourthblock .tagbox p { justify-content: flex-start; }
+	.ftrblock_wrap .fourthblock .tagbox p a:nth-child(3) { margin: 0; }
+	.footer_main .webite_by_block { justify-content: center;margin: 0; }
+
+
+	.headline { margin: 70px 0 0 0; }
+
+	.farm { margin: 0 10px 70px 10px; flex-direction: column; overflow: hidden; }
+	.farm .farm_imgbox { width: 100%; }
+	.farm .farm_imgbox::after { left: -120px; top: -120px; }
+	.farm .farm_detailbox { margin: 0; }
+	.farm .farm_detailbox::after { right: -70px; }
+	.farm .farm_detailbox .farm_text { padding: 40px; }
+	.farm .farm_detailbox .farm_text h3 { padding: 0 0 18px 0; }
+	.farm .farm_detailbox .farm_text h4 { padding: 0 0 16px 0; }
+	.farm .farm_detailbox .farm_text p { font-size: 16px; }
+
+	.yard { margin: 0 10px 70px 10px; flex-direction: column; overflow: hidden; }
+	.yard .farm_detailbox::after { left: -74px;bottom: -24px;transform: rotate(-135deg); }
+	.yard .farm_detailbox .farm_text { padding: 40px; }
+	.yard .farm_detailbox .farm_text h3 { padding: 0 0 18px 0; }
+	.yard .farm_detailbox .farm_text h4 { padding: 0 0 16px 0; }
+	.yard .farm_detailbox .farm_text p { font-size: 16px; }
+	.yard .farm_imgbox { margin: 0; width: 100%; }
+
+	.days_section .row { row-gap: 30px; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	h2 { font-size: 36px; }
+	h3 { font-size: 28px; }
+	h4 { font-size: 30px; }
+	h5 { font-size: 28px; }
+	p{ font-size: 20px; }
+
+
+	.main_header .header_wrap { margin: 0 5px 0 20px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li { margin: 0 10px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li a { font-size: 16px; }
+
+	.banner_wrapper .bnr_wrap { margin: 0 20px; }
+	.banner_wrapper .bnr_wrap .imgbox { height: 800px; margin: 87px 0 0 0; }
+	.banner_wrapper .bnr_wrap .imgbox::after { top: -210px; left: -290px; }
+	.banner_wrapper .bnr_wrap .imgbox::before { right: -100px; bottom: -50px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo { max-width: 250px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo::after { top: -90%; left: -60%; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center { bottom: -30px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a { height: 60px; width: 60px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a img { height: 30px; width: 30px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_btn { right: 150px; bottom: 50px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_btn a { font-size: 20px; padding: 14px 14px 10px 14px; }
+
+	.holiday { margin: 80px 0 0 0; }
+	.holiday_section { padding: 0 0 80px 0; }
+	.holiday_section h2 { padding: 0 0 22px 0; }
+	.holiday_section p { font-size: 18px; }
+
+	.dream { margin: 0 0 80px 0; flex-direction: column; overflow: hidden; }
+	.dream .dream_detailbox { margin: -55px 0 0 0; }
+	.dream .dream_imgbox { width: 100%; }
+	.dream .dream_detailbox .dream_text { padding: 50px; }
+	.dream .dream_detailbox .dream_text h3 { padding: 0 0 20px 0; }
+	.dream .dream_detailbox .dream_text h4 { padding: 0 0 18px 0; }
+	.dream .dream_detailbox .dream_text p { font-size: 18px; padding: 0 0 18px 0; }
+	.dream .dream_detailbox .dream_text .dream_btn a { font-size: 20px; padding: 7px 20px 10px 20px; }
+
+	.teaser { margin: 0 0 80px 0; }
+	.teaser_section:hover { transform: translate(0, 40px); }
+	.teaser_section .teasure_btn a { font-size: 20px; padding: 8px 15px; }
+
+	.host .host_text { top: 100px; right: 100px; height: 180px; width: 180px; }
+	.host .host_text h3 { font-size: 18px; }
+	.host .host_text::after { top: 6px; left: 4px; }
+
+	.ftrblock_wrap .firstblock { max-width: 270px; margin: 0 190px 20px 0; }
+	.ftrblock_wrap .secondblock { margin: 0 0 20px 170px; }
+	.ftrblock_wrap .secondblock .addressblock { padding: 0 0 16px 0; }
+	.ftrblock_wrap .secondblock .loc-btn { margin: 0 0 16px 0; }
+	.ftrblock_wrap .thirdblock p { font-size: 20px; }
+	.ftrblock_wrap .thirdblock p a { font-size: 20px; }
+	.ftrblock_wrap .fourthblock { text-align: start; }
+	.ftrblock_wrap .fourthblock .followbox p { font-size: 20px; }
+	.ftrblock_wrap .fourthblock .social { justify-content: flex-start; margin: 0 0 10px 0; }
+	.ftrblock_wrap .fourthblock .tagbox { max-width: 280px; margin: 0 0 20px 0; }
+	.ftrblock_wrap .fourthblock .tagbox p { justify-content: flex-start; }
+	.ftrblock_wrap .fourthblock .tagbox p a:nth-child(3) { margin: 0; }
+	.footer_main .webite_by_block { justify-content: center; margin: 0; }
+	
+
+	.headline { margin: 80px 0 0 0; }
+
+	.farm { margin: 0 0 80px 0; flex-direction: column; overflow: hidden; }
+	.farm .farm_imgbox { width: 100%; }
+	.farm .farm_detailbox { margin: -55px 0 0 0; }
+	.farm .farm_detailbox .farm_text { padding: 50px; }
+	.farm .farm_detailbox .farm_text h3 { padding: 0 0 20px 0; }
+	.farm .farm_detailbox .farm_text h4 { padding: 0 0 18px 0; }
+	.farm .farm_detailbox .farm_text p { font-size: 18px; }
+
+	.yard { margin: 0 0 80px 0;flex-direction: column; overflow: hidden; }
+	.yard .farm_detailbox { margin: -55px 0 0 0; }
+	.yard .farm_detailbox .farm_text { padding: 50px; }
+	.yard .farm_detailbox .farm_text h3 { padding: 0 0 20px 0; }
+	.yard .farm_detailbox .farm_text h4 { padding: 0 0 18px 0; }
+	.yard .farm_detailbox .farm_text p { font-size: 18px; }
+	.yard .farm_imgbox { margin: 0; width: 100%; }
+
+	.days_section .row { row-gap: 40px; }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+	h2 { font-size: 50px; }
+	h4 { font-size: 45px; }
+	h5 { font-size: 32px; }
+
+	.main_header .header_wrap { margin: 0 0 0 20px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li { margin: 0 20px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li a { font-size: 18px; }
+
+	.banner_wrapper .bnr_wrap { margin: 0 20px; }
+	.banner_wrapper .bnr_wrap .imgbox { height: 800px; margin: 87px 0 0 0; }
+	.banner_wrapper .bnr_wrap .imgbox::after { top: -280px; }
+	.banner_wrapper .bnr_wrap .imgbox::before { right: -100px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo { max-width: 260px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo::after { top: -80%; left: -50%; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center { bottom: -32px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a { height: 65px; width: 65px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a img { height: 30px; width: 30px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_btn a { font-size: 24px; padding: 14px 14px 10px 14px; }
+
+	.holiday { margin: 90px 0 0 0; }
+	.holiday_section { padding: 0 0 90px 0; }
+	.holiday_section h2 { padding: 0 0 24px 0; }
+
+	.dream { margin: 0 0 90px 0; width: 100%; }
+	.dream .dream_imgbox::after { top: -170px; }
+	.dream .dream_detailbox { max-width: 585px; margin: 0; width: 100%; }
+	.dream .dream_detailbox .dream_text { padding: 36px; }
+	.dream .dream_detailbox .dream_text h3 { padding: 0 0 5px 0; font-size: 24px; }
+	.dream .dream_detailbox .dream_text h4 { padding: 0; font-size: 30px; }
+	.dream .dream_detailbox .dream_text p { padding: 0 0 26px 0; font-size: 18px; }
+	.dream .dream_detailbox .dream_text .dream_btn a { font-size: 20px; padding: 7px 20px 10px 20px; }
+	.dream .dream_detailbox::after { right: -80px; }
+	.dream .dream_imgbox { max-width: 1000px; width: 100%; }
+
+	.teaser { margin: 0 0 120px 0; }
+	.teaser_section:hover { transform: translate(0, 50px); }
+	.teaser_section .teasure_btn a { font-size: 22px; padding: 10px 15px; }
+
+	.host .host_text { top: 100px; right: 100px; height: 200px; width: 200px; }
+	.host .host_text h3 { font-size: 20px; }
+	.host .host_text::after { top: 6px; left: 4px; }
+
+	.ftrblock_wrap .firstblock { max-width: 260px;margin: 0 100px 20px 0; }
+	.ftrblock_wrap .secondblock { margin: 0 20px 20px 0px; }
+	.ftrblock_wrap .secondblock .loc-btn { margin: 0 0 16px 0; }
+	.ftrblock_wrap .fourthblock { min-width: 300px; }
+	.ftrblock_wrap .fourthblock .social { margin: 0 0 10px 0; }
+	.ftrblock_wrap .fourthblock .tagbox { max-width: 300px; margin: 0 0 20px 0; }
+	.ftrblock_wrap .fourthblock .tagbox p a:nth-child(3) { margin: 0; }
+
+
+	.headline { margin: 90px 0 0 0; }
+
+	.farm { margin: 0 20px 90px 20px; overflow: hidden; }
+	.farm .farm_imgbox { width: 100%; }
+	.farm .farm_detailbox { max-width: 585px; margin: 0; }
+	.farm .farm_detailbox .farm_text { padding: 43px; }
+	.farm .farm_detailbox .farm_text h3 { padding: 0 0 5px 0; }
+	.farm .farm_detailbox .farm_text h4 { padding: 0 0 5px 0; }
+	.farm .farm_detailbox .farm_text p { font-size: 18px; }
+	.farm .farm_imgbox::after { top: -120px; }
+	.farm .farm_detailbox::after { bottom: -40px; }
+
+	.yard { margin: 0 20px 90px 20px; overflow: hidden; }
+	.yard .farm_imgbox { margin: 0; width: 100%; }
+	.yard .farm_detailbox { max-width: 585px; }
+	.yard .farm_detailbox::after { left: -80px; }
+	.yard .farm_imgbox::after { top: -140px; }
+	.yard .farm_detailbox .farm_text { padding: 43px; }
+	.yard .farm_detailbox .farm_text h4 { padding: 0 0 5px 0; }
+	.yard .farm_detailbox .farm_text h3 { padding: 0 0 5px 0; }
+	.yard .farm_detailbox .farm_text p { font-size: 18px; }
+
+	.days_section .row { row-gap: 60px; }
+}
+
+@media (min-width: 1301px) and (max-width: 1399px) {
+
+	h2 { font-size: 60px; }
+	h4 { font-size: 45px; }
+	h5 { font-size: 36px; }
+
+
+	.main_header .header_wrap { margin: 0 5px 0 30px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li { margin: 0 20px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li a { font-size: 18px; }
+
+	.banner_wrapper .bnr_wrap { margin: 0 30px; }
+	.banner_wrapper .bnr_wrap .imgbox { height: 800px; margin: 90px 0 0 0; }
+	.banner_wrapper .bnr_wrap .imgbox::after { top: -280px; }
+	.banner_wrapper .bnr_wrap .imgbox::before { right: -100px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo { max-width: 260px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo::after { top: -80%; left: -50%; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center { bottom: -32px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a { height: 70px; width: 70px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a img { height: 30px; width: 30px; }
+
+	.holiday { margin: 100px 0 0 0; }
+	.holiday_section { padding: 0 0 100px 0; }
+	.holiday_section h2 { padding: 0 0 28px 0; }
+
+	.dream { margin: 0 0 100px 0; }
+	.dream .dream_imgbox::after { top: -160px; }
+	.dream .dream_imgbox { width: 100%; }
+	.dream .dream_detailbox { max-width: 650px; margin: 0; }
+	.dream .dream_detailbox .dream_text { padding: 18px 44px; }
+	.dream .dream_detailbox .dream_text h3 { padding: 0 0 15px 0; font-size: 24px; }
+	.dream .dream_detailbox .dream_text h4 { padding: 0 0 15px 0; font-size: 34px; }
+	.dream .dream_detailbox .dream_text p { padding: 0 0 15px 0; }
+	.dream .dream_detailbox .dream_text .dream_btn a { font-size: 22px; padding: 7px 20px 10px 20px; }
+
+	.teaser { margin: 0 0 120px 0; }
+	.teaser_section:hover { transform: translate(0, 50px); }
+	.teaser_section .teasure_btn a { font-size: 24px; padding: 10px 15px; }
+
+	.host .host_text { top: 100px; right: 100px; height: 220px; width: 220px; }
+	.host .host_text::after { top: 6px;left: 6px; }
+
+	.ftrblock_wrap .firstblock { max-width: 260px; margin: 0 80px 0 0; }
+	.ftrblock_wrap .secondblock .loc-btn { margin: 0 0 18px 0; }
+	.ftrblock_wrap .fourthblock .social { margin: 0 0 10px 0; }
+	.ftrblock_wrap .fourthblock { min-width: 300px; }
+	.ftrblock_wrap .fourthblock .tagbox { max-width: 300px; }
+
+
+	.headline { margin: 100px 0 0 0; }
+
+	.farm { margin: 0 30px 100px 30px; }
+	.farm .farm_imgbox { width: 100%; }
+	.farm .farm_detailbox { max-width: 650px; margin: 0; }
+	.farm .farm_detailbox .farm_text { padding: 36px 44px; }
+	.farm .farm_detailbox .farm_text h4 { padding: 0 0 10px 0; font-size: 34px; }
+	.farm .farm_imgbox::after { top: -130px; }
+	.farm .farm_detailbox .farm_text h3 { padding: 0 0 6px 0; font-size: 24px; }
+
+	.yard { margin: 0 30px 100px 30px; }
+	.yard .farm_detailbox { max-width: 650px; }
+	.yard .farm_detailbox .farm_text { padding: 36px 44px; }
+	.yard .farm_imgbox { margin: 0; width: 100%; }
+	.yard .farm_imgbox::after { top: -130px; }
+	.yard .farm_detailbox::after { bottom: -40px; }
+	.yard .farm_detailbox .farm_text h3 { padding: 0 0 6px 0; font-size: 24px; }
+	.yard .farm_detailbox .farm_text h4 { padding: 0 0 10px 0; font-size: 34px; }
+
+	.days_section .row { row-gap: 70px; }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+
+	h2 { font-size: 65px; }
+	h4 { font-size: 50px; }
+	h5 { font-size: 40px; }
+
+	.main_header .header_wrap { margin: 0 5px 0 30px; }
+	.main_header .header_wrap .ferien-header-block .ferien-header-nav ul li { margin: 0 25px; }
+
+	.banner_wrapper .bnr_wrap { margin: 0 30px; }
+	.banner_wrapper .bnr_wrap .imgbox { height: 800px; margin: 90px 0 0 0; }
+	.banner_wrapper .bnr_wrap .imgbox::after { top: -250px; }
+	.banner_wrapper .bnr_wrap .imgbox::before { right: -100px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo::after { top: -70%; left: -50%; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a { height: 75px; width: 75px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_center ul li a img { height: 30px; width: 30px; }
+	.banner_wrapper .bnr_wrap .imgbox .bnr_logo { max-width: 285px; }
+
+	.holiday { margin: 110px 0 0 0; }
+	.holiday_section h2 { padding: 0 0 30px 0; }
+
+	.dream .dream_imgbox::after { top: -140px; }
+	.dream .dream_imgbox { width: 100%; }
+	.dream .dream_detailbox { max-width: 700px; margin: 0; }
+	.dream .dream_detailbox .dream_text { padding: 45px; }
+	.dream .dream_detailbox .dream_text h3 { padding: 0 0 10px 0; font-size: 26px; }
+	.dream .dream_detailbox .dream_text h4 { padding: 0 0 16px 0; font-size: 40px; }
+	.dream .dream_detailbox .dream_text p { padding: 0 0 12px 0; }
+	.dream .dream_detailbox .dream_text .dream_btn a { padding: 8px 20px; }
+
+	.teaser { margin: 0 0 120px 0; }
+	.teaser_section:hover { transform: translate(0, 50px); }
+	.teaser_section .teasure_btn a { font-size: 24px; padding: 10px 15px; }
+
+	.host .host_text { top: 100px; right: 100px; height: 220px; width: 220px; }
+	.host .host_text::after { top: 6px; left: 6px; }
+
+	.ftrblock_wrap .firstblock { max-width: 300px; margin: 0 80px 0 0; }
+	.ftrblock_wrap .secondblock .loc-btn { margin: 0 0 18px 0; }
+	.ftrblock_wrap .fourthblock .social { margin: 0 0 10px 0; }
+	.ftrblock_wrap .fourthblock .tagbox { max-width: 316px; }
+
+
+	.headline { margin: 110px 0 0 0; }
+
+	.farm { margin: 0 30px 106px 30px; }
+	.farm .farm_imgbox { width: 100%; }
+	.farm .farm_detailbox .farm_text h3 { font-size: 26px; }
+	.farm .farm_detailbox .farm_text h4 { font-size: 40px; }
+	.farm .farm_detailbox { max-width: 700px; margin: 0; }
+	.farm .farm_detailbox .farm_text { padding: 45px; }
+
+	.yard { margin: 0 30px 106px 30px; }
+	.yard .farm_imgbox { margin: 0; width: 100%; }
+	.yard .farm_detailbox { max-width: 700px; }
+	.yard .farm_detailbox .farm_text h3 { font-size: 26px; }
+	.yard .farm_detailbox .farm_text h4 { font-size: 40px; }
+	.yard .farm_detailbox .farm_text { padding: 45px; }
+	.yard .farm_detailbox::after { bottom: -40px; }
+
+	.days { margin: 0 0 70px 0; }
+	.days_section .row { margin: 0 -34px; }
+	.days_section .col-4 { padding: 0 34px;margin: 0 0 30px 0; }
+}

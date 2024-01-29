@@ -16,32 +16,32 @@ const DaySection = () => {
 				<div className="container">
 					<div className="days_section">
 						<div className="row">
-							<div className="col-lg-4">
+							<div className="col-lg-4 col-md-6">
 								<div className="days_img">
 									<Image src={Dayimg1} alt="image" />
 								</div>
 							</div>
-							<div className="col-lg-4">
+							<div className="col-lg-4 col-md-6">
 								<div className="days_img">
 									<Image src={Dayimg2} alt="image" />
 								</div>
 							</div>
-							<div className="col-lg-4">
+							<div className="col-lg-4 col-md-6">
 								<div className="days_img">
 									<Image src={Dayimg3} alt="image" />
 								</div>
 							</div>
-							<div className="col-lg-4">
+							<div className="col-lg-4 col-md-6">
 								<div className="days_img">
 									<Image src={Dayimg1} alt="image" />
 								</div>
 							</div>
-							<div className="col-lg-4">
+							<div className="col-lg-4 col-md-6">
 								<div className="days_img">
 									<Image src={Dayimg2} alt="image" />
 								</div>
 							</div>
-							<div className="col-lg-4">
+							<div className="col-lg-4 col-md-6">
 								<div className="days_img">
 									<Image src={Dayimg3} alt="image" />
 								</div>

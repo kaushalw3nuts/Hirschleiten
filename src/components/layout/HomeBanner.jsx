@@ -10,19 +10,42 @@ import PrimaryBtn from "@/components/layout/PrimaryBtn";
 
 const HomeBanner = () => {
 
+	const bnrLoop = [
+		{
+			link: '#',
+			imgsrc: Mail,
+			imgalt: 'Mailimg',
+		},
+		{
+			link: '#',
+			imgsrc: Phone,
+			imgalt: 'Phoneimg',
+		},
+		{
+			link: '#',
+			imgsrc: Location,
+			imgalt: 'locationimg',
+		},
+	]
+
 	return (
 		<>
 			<div className="banner_wrapper">
 				<div className="bnr_wrap">
 					<div className="imgbox">
 						<div className="bnr_logo">
-							<Link href="#"><Image src={Logo} alt="Logoimg" /></Link>
+							<Link href="/"><Image src={Logo} alt="logo" /></Link>
 						</div>
 						<div className="bnr_center">
 							<ul>
-								<li><Link href="#"><Image src={Mail} alt="Mailimg" /></Link></li>
-								<li><Link href="#"><Image src={Phone} alt="phoneimg" /></Link></li>
-								<li><Link href="#"><Image src={Location} alt="locationimg" /></Link></li>
+								{bnrLoop.map((social, index) => {
+									const {link, imgsrc, imgalt} = social
+									return (
+										<li key={index}>
+											<Link href={link}><Image src={imgsrc} alt={imgalt} /></Link>
+										</li>
+									)
+								})}
 							</ul>
 						</div>
 						<PrimaryBtn name="Book a summer vacation" link="#" />
