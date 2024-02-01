@@ -10,66 +10,55 @@ import PrimaryBtn from "@/components/layout/PrimaryBtn";
 
 const TeaserSection = () => {
 
-	return (
+	const TeaserItems = [
+		{ 
+			srcItem: Teaser1,
+			altItem: 'image',
+			iconItem: Teasericon,
+			textItem: 'Teaser',
+		},
+		{
+			srcItem: Teaser2,
+			altItem: 'image',
+			iconItem: Teasericon,
+			textItem: 'Teaser',
+		},
+		{
+			srcItem: Teaser3,
+			altItem: 'image',
+			iconItem: Teasericon,
+			textItem: 'Teaser',
+		},
+	];
 
+	return (
 		<>
 			<div className="teaser">
 				<div className="container">
 					<div className="row">
-						<div className="col-lg-4 col-md-6">
-							<div className="teaser_section">
-								<div className="teaser_imgbox">
-									<Image src={Teaser1} alt="image" />
-								</div>
-								<div className="teaser_caption">
-									<div className="image">
-										<Image src={Teasericon} alt="image" />
-									</div>
-									<div className="teaser_head">
-										<h5>Teaser</h5>
-									</div>
-								</div>
-								<div className="teasure_btn">
-									<PrimaryBtn name="button" link="#" />
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 col-md-6">
-							<div className="teaser_section">
-								<div className="teaser_imgbox">
-									<Image src={Teaser2} alt="image" />
-								</div>
-								<div className="teaser_caption">
-									<div className="image">
-										<Image src={Teasericon} alt="image" />
-									</div>
-									<div className="teaser_head">
-										<h5>Teaser</h5>
+						{TeaserItems.map((teaserData, index) => {
+							const {srcItem, altItem, iconItem, textItem} = teaserData
+							return (
+								<div className="col-lg-4 col-md-6" key={index}>
+									<div className="teaser_section">
+										<div className="teaser_imgbox">
+											<Image src={srcItem} alt={altItem} />
+										</div>
+										<div className="teaser_caption">
+											<div className="image">
+												<Image src={iconItem} alt={altItem} />
+											</div>
+											<div className="teaser_head">
+												<h5>{textItem}</h5>
+											</div>
+										</div>
+										<div className="teasure_btn">
+											<PrimaryBtn name="button" link="#" />
+										</div>
 									</div>
 								</div>
-								<div className="teasure_btn">
-									<PrimaryBtn name="button" link="#" />
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 col-md-6">
-							<div className="teaser_section">
-								<div className="teaser_imgbox">
-									<Image src={Teaser3} alt="image" />
-								</div>
-								<div className="teaser_caption">
-									<div className="image">
-										<Image src={Teasericon} alt="image" />
-									</div>
-									<div className="teaser_head">
-										<h5>Teaser</h5>
-									</div>
-								</div>
-								<div className="teasure_btn">
-									<PrimaryBtn name="button" link="#" />
-								</div>
-							</div>
-						</div>
+							)
+						})}
 					</div>
 				</div>
 			</div>

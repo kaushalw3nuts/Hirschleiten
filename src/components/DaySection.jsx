@@ -9,6 +9,32 @@ import Dayimg3 from '@/assets/images/days-image3.png';
 
 const DaySection = () => {
 
+	const dayList = [
+		{ 
+			dayImgsrc: Dayimg1,
+			dayImgalt: 'image',
+		},
+		{
+			dayImgsrc: Dayimg2,
+			dayImgalt: 'image',
+		},
+		{
+			dayImgsrc: Dayimg3,
+			dayImgalt: 'image',
+		},
+		{ 
+			dayImgsrc: Dayimg1,
+			dayImgalt: 'image',
+		},
+		{ 
+			dayImgsrc: Dayimg2,
+			dayImgalt: 'image',
+		},
+		{
+			dayImgsrc: Dayimg3,
+			dayImgalt: 'image',
+		},
+	];
 	return (
 
 		<>
@@ -16,36 +42,16 @@ const DaySection = () => {
 				<div className="container">
 					<div className="days_section">
 						<div className="row">
-							<div className="col-lg-4 col-md-6">
-								<div className="days_img">
-									<Image src={Dayimg1} alt="image" />
-								</div>
-							</div>
-							<div className="col-lg-4 col-md-6">
-								<div className="days_img">
-									<Image src={Dayimg2} alt="image" />
-								</div>
-							</div>
-							<div className="col-lg-4 col-md-6">
-								<div className="days_img">
-									<Image src={Dayimg3} alt="image" />
-								</div>
-							</div>
-							<div className="col-lg-4 col-md-6">
-								<div className="days_img">
-									<Image src={Dayimg1} alt="image" />
-								</div>
-							</div>
-							<div className="col-lg-4 col-md-6">
-								<div className="days_img">
-									<Image src={Dayimg2} alt="image" />
-								</div>
-							</div>
-							<div className="col-lg-4 col-md-6">
-								<div className="days_img">
-									<Image src={Dayimg3} alt="image" />
-								</div>
-							</div>
+							{dayList.map((dayWrap, index) => {
+								const {dayImgsrc, dayImgalt} = dayWrap;
+								return (
+									<div className="col-lg-4 col-md-6" key={index}>
+										<div className="days_img">
+											<Image src={dayImgsrc} alt={dayImgalt} />
+										</div>
+									</div>
+								)
+							})}
 						</div>
 					</div>
 				</div>

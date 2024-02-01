@@ -140,7 +140,16 @@ body.open_nav { overflow: hidden; }
 .holiday { margin: 140px 0 0 0; }
 .holiday_section { text-align: center; max-width: 940px; margin: 0 auto; padding: 0 0 104px 0; }
 .holiday_section h1 { padding: 0 0 15px 0; }
+.holiday_section h1 .word_wrap { display: flex; flex-wrap: wrap; justify-content: center; overflow: hidden; }
+.word_wrap .word { transition: transform 0.6s ease; transform: translateY(100%); opacity: 0; }
+.word_wrap.visible .word { animation: splash .5s forwards ease-in-out; }
+@keyframes splash { 
+	from { transform: translateY(100%); opacity: 0; } 
+   
+	to { transform: translateY(0%); opacity: 1; } 
+}
 .holiday_section h2 { padding: 0 0 34px 0; }
+.holiday_section h2 .word_wrap { display: flex; flex-wrap: wrap; justify-content: center; overflow: hidden; }
 .holiday_section p { color: #5D5D5D; font-size: 20px; letter-spacing: 0.05em; line-height: 1.8; }
 
 
@@ -152,7 +161,9 @@ body.open_nav { overflow: hidden; }
 .dream .dream_detailbox::after { content: ""; position: absolute; right: -58px; bottom: -24px; background: #000000; width: 167px; height: 90px; transform: rotate(-45deg); }
 .dream .dream_detailbox .dream_text { padding: 97px 82px; }
 .dream .dream_detailbox .dream_text h3 { padding: 0 0 24px 0; }
+.dream .dream_detailbox .dream_text h3 .word_wrap { display: flex; flex-wrap: wrap; overflow: hidden; }
 .dream .dream_detailbox .dream_text h4 { padding: 0 0 23px 0; }
+.dream .dream_detailbox .dream_text h4 .word_wrap { display: flex; flex-wrap: wrap; overflow: hidden; }
 .dream .dream_detailbox .dream_text p { font-size: 20px; line-height: 1.8; letter-spacing: 0.05em; color: #5D5D5D; padding: 0 0 28px 0; }
 .dream .dream_detailbox .dream_text .dream_btn { display: flex; justify-content: flex-start; align-items: center; }
 .dream .dream_detailbox .dream_text .dream_btn a { color: #B2ACA5; font-size: 20px; letter-spacing: 0.05em; line-height: 1.38; border: 1px solid #B2ACA5; padding: 10px 20px; transition: all 0.4s ease-in-out; display: block; text-decoration: none; }
@@ -236,7 +247,9 @@ body.open_nav { overflow: hidden; }
 .farm .farm_detailbox::after { content: ""; position: absolute; right: -52px; bottom: -22px; background: #000000; width: 147px; height: 79px; transform: rotate(-45deg); }
 .farm .farm_detailbox .farm_text { padding: 99px 92px 110px 71px; }
 .farm .farm_detailbox .farm_text h3 { padding: 0 0 21px 0; }
+.farm .farm_detailbox .farm_text h3 .word_wrap { display: flex; flex-wrap: wrap; overflow: hidden; }
 .farm .farm_detailbox .farm_text h4 { padding: 0 0 23px 0; }
+.farm .farm_detailbox .farm_text h4 .word_wrap { display: flex; flex-wrap: wrap; overflow: hidden; }
 .farm .farm_detailbox .farm_text p { font-size: 20px; line-height: 1.8; letter-spacing: 0.05em; color: #5D5D5D; }
 
 
@@ -245,7 +258,9 @@ body.open_nav { overflow: hidden; }
 .yard .farm_detailbox::after { content: ""; position: absolute; left: -50px; bottom: -18px; background: #000000; width: 147px; height: 79px; transform: rotate(-135deg); }
 .yard .farm_detailbox .farm_text { padding: 106px 89px 104px 74px; }
 .yard .farm_detailbox .farm_text h3 { padding: 0 0 21px 0; }
+.yard .farm_detailbox .farm_text h3 .word_wrap { display: flex; flex-wrap: wrap; overflow: hidden; }
 .yard .farm_detailbox .farm_text h4 { padding: 0 0 23px 0; }
+.yard .farm_detailbox .farm_text h4 .word_wrap { display: flex; flex-wrap: wrap; overflow: hidden; }
 .yard .farm_detailbox .farm_text p { font-size: 20px; line-height: 1.8; letter-spacing: 0.05em; color: #5D5D5D; }
 .yard .farm_imgbox { max-width: 955px; position: relative; margin: 0 0 0 -89px; }
 .yard .farm_imgbox::after { content: ""; position: absolute; right: -116px; top: -105px; background: #000000; width: 212px; height: 200px; transform: rotate(-45deg); }
