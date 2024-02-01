@@ -12,17 +12,17 @@ const HomeBanner = () => {
 
 	const bnrLoop = [
 		{
-			link: '#',
+			linkurl: '#',
 			imgsrc: Mail,
 			imgalt: 'Mailimg',
 		},
 		{
-			link: '#',
+			linkurl: '#',
 			imgsrc: Phone,
 			imgalt: 'Phoneimg',
 		},
 		{
-			link: '#',
+			linkurl: '#',
 			imgsrc: Location,
 			imgalt: 'locationimg',
 		},
@@ -39,10 +39,10 @@ const HomeBanner = () => {
 						<div className="bnr_center">
 							<ul>
 								{bnrLoop.map((social, index) => {
-									const {link, imgsrc, imgalt} = social
+									const {linkurl, imgsrc, imgalt} = social
 									return (
 										<li key={index}>
-											<Link href={link}><Image src={imgsrc} alt={imgalt} /></Link>
+											<Link href={linkurl}><Image src={imgsrc} alt={imgalt} /></Link>
 										</li>
 									)
 								})}
