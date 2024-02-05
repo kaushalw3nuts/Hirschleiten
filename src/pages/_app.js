@@ -13,15 +13,26 @@ gsap.registerPlugin(ScrollTrigger);
 export default function App({ Component, pageProps }) {
 
   useEffect( () => {
+
+    const loadLocomotiveScroll = async () => {
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomoScroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+      });
+    };
+
+    loadLocomotiveScroll();
+
     gsap.set(".fadeInUp", {y: "30%", opacity: 0,});
     ScrollTrigger.batch(".fadeInUp", {
-      onEnter: batch => gsap.to(batch, {  opacity: 1, duration: .8, delay:0.5, stagger: 0.2, y:0}),
+      onEnter: batch => gsap.to(batch, { opacity: 1, duration: .8, delay:0.5, stagger: 0.2, y: 0 }),
     });
   }, [])
 
   return (
     <>
-      <main className="main_wrap">
+      <main className="main_wrap" data-scroll-container>
         <Header />
         <Component {...pageProps} />
         <Footer />
