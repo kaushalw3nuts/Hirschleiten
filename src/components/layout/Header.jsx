@@ -9,27 +9,27 @@ const Header = () => {
 
 	const navLinks = [
 		{ 
-			href: "/",
+			hrefLink: "/",
 			navTitle: "Home",
 		},
 		{
-			href: "/about",
+			hrefLink: "/about",
 			navTitle: "About Us",
 		},
 		{
-			href: "/holiday",
+			hrefLink: "/holiday",
 			navTitle: "Holiday apartment",
 		},
 		{ 
-			href: "/prices", 
+			hrefLink: "/prices", 
 			navTitle: "Prices",
 		},
 		{ 
-			href: "/arrival",
+			hrefLink: "/arrival",
 			navTitle: "Arrival & location",
 		},
 		{
-			href: "/contact", 
+			hrefLink: "/contact", 
 			navTitle: "Contact",
 		},
 	];
@@ -59,11 +59,11 @@ const Header = () => {
 						<div className={`ferien-header-nav ${menuBtn ? 'slide' : ''}`}>
 							<ul>
 								{navLinks.map((navBar, index) => {
-									const {href, navTitle} = navBar;
-									const isActive = router.pathname === href;
+									const {hrefLink, navTitle} = navBar;
+									const isActive = router.pathname === hrefLink;
 									return (
 										<li key={index} className={isActive ? 'active' : ''}>
-											<Link href={href}>{navTitle}</Link>
+											<Link href={hrefLink}>{navTitle}</Link>
 										</li>
 									)
 								})}

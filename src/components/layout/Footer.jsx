@@ -12,6 +12,64 @@ import ftrimg3 from '@/assets/images/footer-image3.png';
 
 const Footer = () => {
 
+	const ftrBtnData = [
+		{
+			urlLink: "#",
+			btnTitle: "imprint",
+		},
+		{
+			urlLink: "#",
+			btnTitle: "data protection",
+		},
+		{
+			urlLink: "#",
+			btnTitle: "AGB",
+		},
+	]
+
+	const socialList = [
+		{
+			iconurl: "#",
+			socialsrc: Facebook,
+			socialalt: "image",
+		},
+		{
+			iconurl: "#",
+			socialsrc: Instagram,
+			socialalt: "image",
+		},
+	]
+
+	const tagList = [
+		{
+			tagurl: "#",
+			tagTitle: "#hirschleiten",
+		},
+		{
+			tagurl: "#",
+			tagTitle: "#kleinarl",
+		},
+		{
+			tagurl: "#",
+			tagTitle: "#salzburgerland",
+		},
+	]
+
+	const subFtrimg = [
+		{
+			subFtrsrc: ftrimg1,
+			subFtralt: "image",
+		},
+		{
+			subFtrsrc: ftrimg2,
+			subFtralt: "image",
+		},
+		{
+			subFtrsrc: ftrimg3,
+			subFtralt: "image",
+		},
+	]
+
 	return (
 
 		<>
@@ -30,9 +88,14 @@ const Footer = () => {
 							</div>
 							<div className="ftr_btn">
 								<ul>
-									<li><Link href="#">imprint</Link></li>
-									<li><Link href="#">data protection</Link></li>
-									<li><Link href="#">AGB</Link></li>
+									{ftrBtnData.map((btnList, index) => {
+										const {urlLink, btnTitle} = btnList;
+										return (
+											<li key={index}>
+												<Link href={urlLink}>{btnTitle}</Link>
+											</li>
+										)
+									})}
 								</ul>
 							</div>
 						</div>
@@ -45,14 +108,23 @@ const Footer = () => {
 								<p>Follow us:</p>
 							</div>
 							<div className="social">
-								<Link href="#"><Image src={Facebook} alt="image" /></Link>
-								<Link href="#"><Image src={Instagram} alt="image" /></Link>
+								{socialList.map((socialIconList, index) => {
+									const {iconurl, socialsrc, socialalt} = socialIconList;
+									return (
+										<Link key={index} href={iconurl}>
+											<Image src={socialsrc} alt={socialalt} />
+										</Link>
+									)
+								})}
 							</div>
 							<div className="tagbox">
 								<p>
-									<Link href="#">#hirschleiten</Link>
-									<Link href="#">#kleinarl</Link>
-									<Link href="#">#salzburgerland</Link>
+									{tagList.map((tagListing, index) => {
+										const {tagurl, tagTitle} = tagListing;
+										return (
+											<Link key={index} href={tagurl}>{tagTitle}</Link>
+										)
+									})}
 								</p>
 							</div>
 						</div>
@@ -64,15 +136,14 @@ const Footer = () => {
 				<div className="sub_footer">
 					<div className="container">
 						<div className="footer_section">
-							<div className="footer_img">
-								<Image src={ftrimg1} alt="image" />
-							</div>
-							<div className="footer_img">
-								<Image src={ftrimg2} alt="image" />
-							</div>
-							<div className="footer_img">
-								<Image src={ftrimg3} alt="image" />
-							</div>
+							{subFtrimg.map((ftrImages, index) => {
+								const {subFtrsrc, subFtralt} = ftrImages;
+								return (
+									<div className="footer_img" key={index}>
+										<Image src={subFtrsrc} alt={subFtralt} />
+									</div>		
+								)
+							})}
 						</div>
 					</div>
 				</div>
