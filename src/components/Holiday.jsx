@@ -12,8 +12,8 @@ const Holiday = () => {
 
 	return (
 		<>
-			<div class="holiday">
-				<div class="container">
+			<div className="holiday">
+				<div className="container">
 					<div className="holiday_section">
 						<h1><MainTitleBox main_title="Holiday apartment on an organic farm in Kleinarl" /></h1>
 						<h2><SubTitleBox sub_title="Welcome to Hirschleiten" /></h2>
