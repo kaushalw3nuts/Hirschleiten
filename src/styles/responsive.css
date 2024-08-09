@@ -106,6 +106,12 @@
 
 	.days { margin: 0 0 40px 0; }
 	.days_section .row { row-gap: 30px; }
+
+	.section .error { font-size: 160px; }
+	.section span { font-size: 30px; margin-top: -50px; }
+	.section span::after { width: 80px; }
+	.section .page { margin: 1.5rem 0; font-size: 18px; }
+	.section .back_btn .back-home { height: 52px; font-size: 16px; padding: 0 40px; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -209,6 +215,12 @@
 	.yard .farm_imgbox { margin: 0; width: 100%; }
 
 	.days_section .row { row-gap: 30px; }
+
+	.section .error { font-size: 180px; }
+	.section span { font-size: 40px; margin-top: -60px; }
+	.section span::after { width: 90px; }
+	.section .page { margin: 1.5rem 0; font-size: 18px; }
+	.section .back_btn .back-home { height: 52px; padding: 0 40px; }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

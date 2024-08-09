@@ -1,6 +1,16 @@
 import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Error = () => {
+
+	const routing = useRouter();
+	useEffect(() => {
+		setTimeout(() => {
+			routing.push("/");
+		}, 3000);
+	}, []);
+	
 	return (
 		<>
 			<div className="section">

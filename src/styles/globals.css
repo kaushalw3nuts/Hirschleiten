@@ -275,7 +275,7 @@ body.open_nav { overflow: hidden; }
 .days_section .days_img img { width: 100%; height: auto; display: flex; transition: all 0.4s ease-in-out; }
 
 
-.section { padding: 4rem 2rem; display: flex; align-items: center; justify-content: center; width: 100%; height: 100vh; flex-direction: column; }
+.section { padding: 1rem; display: flex; align-items: center; justify-content: center; width: 100%; height: 100vh; flex-direction: column; text-align: center; }
 .section .error { font-size: 220px; color: #008B62; text-shadow: 1px 1px 1px #00593E, 2px 2px 1px #00593E, 3px 3px 1px #00593E, 4px 4px 1px #00593E, 5px 5px 1px #00593E, 6px 6px 1px #00593E, 7px 7px 1px #00593E, 8px 8px 1px #00593E, 25px 25px 8px rgba(0,0,0, 0.2); opacity: 0.8; }
 .section span { width: 100%; font-size: 60px; text-transform: uppercase; text-align: center; padding-bottom: 20px; line-height: 1.1923; color: #bbbbbb; font-weight: 500; display: flex; justify-content: center; margin-top: -80px; position: relative; z-index: 1; }
 .section span::after { content: ""; position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 0); border-top: 2px solid #FFFFFF; width: 100px; }
