@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useRouter } from "next/router";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,13 +30,16 @@ export default function App({ Component, pageProps }) {
       onEnter: batch => gsap.to(batch, { opacity: 1, duration: .8, delay:0.5, stagger: 0.2, y: 0 }),
     });
   }, [])
+  
+  const route = useRouter();
+  const is404Page = route.isFallback || route.pathname == '/404';
 
   return (
     <>
       <main className="main_wrap" data-scroll-container>
-        <Header />
+        { !is404Page && <Header /> }
         <Component {...pageProps} />
-        <Footer />
+        { !is404Page && <Footer /> }
       </main>
     </>
   )
