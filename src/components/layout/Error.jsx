@@ -19,7 +19,7 @@ const Error = () => {
 				</h1>
 				<span>PAGE NOT FOUND</span>
 				<div className="page">
-					We can't find the page you're looking for. If the problem persists please contact us.
+					We can&apos;t find the page you&apos;re looking for. If the problem persists please contact us.
 				</div>
 				<div className="back_btn">
 					<Link className="back-home" href="/">Back to home</Link>
