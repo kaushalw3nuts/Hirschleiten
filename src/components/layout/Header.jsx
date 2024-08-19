@@ -17,6 +17,10 @@ const Header = () => {
 			navTitle: "About Us",
 		},
 		{
+			hrefLink: "/blog",
+			navTitle: "Blog",
+		},
+		{
 			hrefLink: "/holiday",
 			navTitle: "Holiday apartment",
 		},
