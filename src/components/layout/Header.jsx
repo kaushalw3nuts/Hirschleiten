@@ -47,7 +47,9 @@ const Header = () => {
 	}, []);
 
 	const [menuBtn, setMenuBtn] = useState(false);
-	const menuHandler = () => {
+	const menuHandler = (e) => {
+		e.preventDefault();
+		
 		setMenuBtn(!menuBtn);
 		const bodyElement = document.body;
 		bodyElement.classList.toggle('open_nav');
@@ -74,7 +76,7 @@ const Header = () => {
 							</ul>
 						</div>
 						<div className="menu-btn">
-							<Link className={`toggle-btn ${menuBtn ? 'active' : ''}`} href="javascript:void(0);" onClick={menuHandler}>
+							<Link className={`toggle-btn ${menuBtn ? 'active' : ''}`} href="#" onClick={(e) => menuHandler(e)}>
 								<span></span>
 							</Link>
 						</div>
